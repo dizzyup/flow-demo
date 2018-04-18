@@ -6,7 +6,7 @@
     "APP_ENV": {
       "value": "review"
     }
-  }
+  },
   "formation": {
     "web": {
       "quantity": 1
