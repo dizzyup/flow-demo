@@ -14,14 +14,16 @@ app.get('/', function(request, response) {
     var envName = 'staging'
   } else if (env == 'production') {
     var envName = 'production'
-  } else {
+  } else if (env == 'review') {
     var envName = 'review app'
+  } else {
+    var envName = 'local'
   }
   response.render('index.html', { env: envName});
 });
 
 app.listen(app.get('port'), function() {
-  console.log("Node app is running at localhost:" + app.get('port'));
+  console.log("Node app running at http://localhost:" + app.get('port'));
 });
 
 module.exports = app
