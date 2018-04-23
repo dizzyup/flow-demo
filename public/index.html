@@ -6,7 +6,7 @@
 		<title>Town Hall Demo</title>
 		<style>
 			.hero-image--soon {
-				background: url(soon.jpg);
+				background: url(open.jpg);
 				background-size: cover;
 			}
 		</style>
@@ -14,16 +14,23 @@
 
 	<body class="bg-black">
 
-		<div class="z-2 relative vh-100 w-100 flex flex-column justify-center items-center">
+		<div class="z-2 relative vh-100 w-100 flex flex-column justify-between items-center">
 			<div class="bg-white flex items-center justify-between w-100 ph4 pv4">
-			  <div class="f5 fw6 ttu tracked black">
-					<span>Cawfee<span class="fw2">Lab</span></span>
+			  <div class="flex items-center f5 fw6 ttu tracked black">
+			    <span>Cawfee<span class="fw2">Lab</span></span>
+					<span class="ml2 br1 ph1 lh-copy white fw6 f7 ttu tracked bg-light-red">Open!</span>
 			  </div>
+				<div class="flex items-center f6 fw6 ttu tracked black cursor-pointer">
+					<span class="mr3 hover-light-red">Menu</span>
+					<span class="mr3 hover-light-red">Shop</span>
+					<span class="hover-light-red">Contact</span>
+				</div>
 			</div>
-			<div class="flex flex-auto flex-column items-center justify-center">
-				<div class="pv4 ph5 tc br3 bg-white">
-					<h2 class="f2 fw6 ma0 black ttu tracked">Opening Soon</h2>
-					<p class="f4 black ma0 pt2 ttu tracked">24<sup class="f7">th</sup> &amp; Mission</p>
+			<div class="flex w-100 bg-white flex-column items-center justify-center">
+				<div class="pt4 pb5 tc br3 bg-white">
+					<h2 class="f2 fw6 ma0 pb2 light-red ttu tracked">Now Open</h2>
+					<p class="f4 navy ma0 pt2 ttu tracked">24<sup class="f7">th</sup> &amp; Mission</p>
+					<p class="f5 light-red ma0 pt2">8am &mdash; 7pm</p>
 				</div>
 			</div>
 		</div>
@@ -32,7 +39,7 @@
 			ENV: <span id="env"></span>
 		</div>
 
-		<div class="z-1 absolute absolute--fill hero-image hero-image--soon o-70"></div>
+		<div class="z-1 absolute absolute--fill hero-image hero-image--soon"></div>
 
 		<script>
 			var env = "<%= env %>";
