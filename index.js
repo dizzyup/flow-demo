@@ -24,7 +24,7 @@ app.get('/', function(request, response) {
 });
 
 app.listen(app.get('port'), function() {
-  console.log("Node app running at http://localhost:" + app.get('port'));
+  console.log("App running at http://localhost:" + app.get('port'));
 });
 
 module.exports = app
